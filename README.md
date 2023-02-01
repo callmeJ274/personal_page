@@ -1,5 +1,5 @@
-#Personal Blog
-##Live url: https://callmej274.github.io/personal_page/
+# Personal Blog
+## Live url: https://callmej274.github.io/personal_page/
 Folder description:
 - index.html: landing page for self introduction
 - css/ : contains files for interface
