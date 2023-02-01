@@ -1,0 +1,94 @@
+@import "typo.css";
+@import "navigate.css";
+@import "typo.css";
+
+.container{
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 150px 20px 300px auto 150px;
+    /* Initially each element has its own row for small screens */
+    grid-template-areas: 
+    "hd"
+    "na"
+    "sd"
+    "main"
+    "ft";
+  }
+    .header{
+      /* row start/column start/ row end/ column end */
+      grid-area:hd;
+      background-color: darksalmon;
+      place-items: center;
+      
+    }
+    .navigate{
+      grid-area: na;
+      margin-bottom: 10px;
+    }
+    .footer{
+        grid-area: ft;  
+        place-items: center;
+        grid-area: ft;
+        display: flex;
+        flex-direction: row;
+        height: 10px;
+        color: #222;
+        margin-top: 20px;
+    }
+    .sidebar{
+        grid-area: sd;
+        display: flex;
+        flex-direction: row;
+        place-items: top;
+        justify-items: center;
+    }
+    .content{
+      grid-area: main;
+      margin-left: 15px;
+      margin-top: 30px;
+      font-size: 17px;
+    }
+    .photoBox{
+        width: 90%;
+        height: auto;
+        background-size: cover;
+    }
+    ul
+    {
+      display:flex;  
+      list-style:none;
+      justify-content: center;
+    }
+  /* If Screen Is Wide Enough */
+  @media(min-width:600px) {
+  .container{
+        display:grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 150px 20px auto 150px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "sd na na na na na na na"
+        "sd main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+        /* border: 2px solid red; */
+    }
+    div.header {
+        font-size: 40px;
+      }
+    .sidebar{
+      margin-top: 15px;
+    }
+    ul
+    {
+      display:flex;  
+      list-style:none;
+      justify-content: left;
+    }
+    
+    .photoBox{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+    
+  }
