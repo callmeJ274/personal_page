@@ -58,9 +58,8 @@
       font-size: 15px;
     }
     .photoBox{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      width: 80%;
+      height: auto;
     }
     ul
     {
@@ -95,9 +94,8 @@
     }
     
     .photoBox{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 90%;
+        height: auto;
     }
     .avata{
       width: 90%;
