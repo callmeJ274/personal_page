@@ -61,8 +61,6 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 0.5x;
-      height: 0.5x
     }
     ul
     {
@@ -97,8 +95,6 @@
     }
     
     .photoBox{
-        width: 200px;
-        height: 150px;
         display: block;
         margin-left: auto;
         margin-right: auto;
