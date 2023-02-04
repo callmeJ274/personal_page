@@ -3,17 +3,15 @@
 @import "typo.css";
 
 .avata{
-  width: 80%;
-  height: 90%;
-  margin-top: 20px;
-  background-size: cover;
-  background-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container{
     display:grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 150px 50px 300px auto 150px;
+    grid-template-columns: auto;
+    grid-template-rows: auto 50px auto auto 150px;
     /* Initially each element has its own row for small screens */
     grid-template-areas: 
     "hd"
@@ -25,6 +23,7 @@
   header{
       /* row start/column start/ row end/ column end */
       grid-area:hd;
+      font-size: 40px;
       background-color: darksalmon;
       place-items: center;
       
@@ -57,9 +56,9 @@
       font-size: 17px;
     }
     .photoBox{
-        width: 90%;
-        height: auto;
-        background-size: cover;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     ul
     {
@@ -68,11 +67,11 @@
       justify-content: center;
     }
   /* If Screen Is Wide Enough */
-  @media(min-width:400px) {
+  @media(min-width:900px) {
   .container{
         display:grid;
-        grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 150px 20px auto 150px;
+        grid-template-columns: 300px auto auto;
+        grid-template-rows: auto 20px auto 150px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
         "sd na na na na na na na"
@@ -80,9 +79,9 @@
         "ft ft ft ft ft ft ft ft";
         /* border: 2px solid red; */
     }
-    header {
+    /* header {
         font-size: 40px;
-      }
+      } */
     .sidebar{
       margin-top: 15px;
     }
@@ -96,14 +95,47 @@
     .photoBox{
         width: 100%;
         height: auto;
-        background-size: cover;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
     }
     .avata{
-      width: 90%;
-      height: 90%;
+      width: auto;
+      height: auto;
       margin-top: 0;
       background-size: cover;
       background-position: center;
     }
     
+  }
+
+  @media (max-width:400px) {
+    .container{
+      display:grid;
+      grid-template-columns: 300px;
+      grid-template-rows: auto 50px auto auto auto;
+      /* Initially each element has its own row for small screens */
+      grid-template-areas: 
+      "hd"
+    "na"
+    "sd"
+    "main"
+    "ft";
+    }
+    .avata{
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    header{
+      font-size: 15px;
+    }
+    /* p{
+      padding-right: 20px;
+    } */
+
+  li{
+    display:list-item;
+    padding-right: 10px;
+    }
   }
