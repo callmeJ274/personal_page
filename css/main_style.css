@@ -3,8 +3,11 @@
 @import "typo.css";
 
 .avata{
-  width: 0.75x;
-  height:0.75x
+  width: 80%;
+  height: 90%;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
 }
 
 .container{
@@ -72,7 +75,7 @@
   .container{
         display:grid;
         grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 150px 20px 600px 150px;
+        grid-template-rows: auto 20px auto 150px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
         "sd na na na na na na na"
@@ -94,15 +97,15 @@
     }
     
     .photoBox{
-        width: 100%;
-        height: auto;
+        width: 200px;
+        height: 150px;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
     .avata{
-      width: 100%;
-      height: 100%;
+      width: 90%;
+      height: 90%;
       margin-top: 0;
       background-size: cover;
       background-position: center;
