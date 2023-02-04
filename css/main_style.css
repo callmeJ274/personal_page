@@ -101,8 +101,8 @@
         margin-right: auto;
     }
     .avata{
-      width: 0.75x;
-      height: 0.75x;
+      width: 100%;
+      height: 100%;
       margin-top: 0;
       background-size: cover;
       background-position: center;
