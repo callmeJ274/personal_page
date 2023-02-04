@@ -3,9 +3,8 @@
 @import "typo.css";
 
 .avata{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 0.75x;
+  height:0.75x
 }
 
 .container{
@@ -53,12 +52,14 @@
       grid-area: main;
       margin-left: 15px;
       margin-top: 30px;
-      font-size: 17px;
+      font-size: 15px;
     }
     .photoBox{
       display: block;
       margin-left: auto;
       margin-right: auto;
+      width: 0.5x;
+      height: 0.5x
     }
     ul
     {
@@ -70,7 +71,7 @@
   @media(min-width:900px) {
   .container{
         display:grid;
-        grid-template-columns: 300px auto auto;
+        grid-template-columns: 300px 300px 300px;
         grid-template-rows: auto 20px auto 150px;
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
@@ -96,12 +97,12 @@
         width: 100%;
         height: auto;
         display: block;
-    margin-left: auto;
-    margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .avata{
-      width: auto;
-      height: auto;
+      width: 0.75x;
+      height: 0.75x;
       margin-top: 0;
       background-size: cover;
       background-position: center;
